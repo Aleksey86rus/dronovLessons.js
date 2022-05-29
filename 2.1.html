@@ -8,21 +8,40 @@
 
 <body>
   <!-- <h1>Пересчет величин</h1>
-  <script type="text/javascript">
-    const ins = window.prompt('Величина в дюймах', 0);
-    let cents;
-    if (ins == null)
-      cents = 'Величина на была введена';
-    else
+
+  <script>
+    const ins = (prompt('Величина в дюймах'));
+
+    if (ins === null || ins === '') {
+      alert('Величина на была введена');
+    }
+
+    else {
+      let s = 'дюйм';
+      switch (Math.floor(ins)) {
+        case 1:
+          break;
+        case 2:
+        case 3:
+        case 4:
+          s += 'а';
+          break;
+        default:
+          s += 'ов';
+      }
+
+      document.write(`<h2> ${ins} дюймов </h2>`);
       cents = ins * 2.54;
-    window.document.write('<h2>', cents, '</h2>');
+      document.write(`<h2> ${cents} см.</h2>`);
+    }
   </script> -->
+
   <!-- <script src="./1.12-homework.js"></script> -->
-  <table>
+  <!-- <table>
     <h1>Квадратные корни</h1>
     <script src="./lesson-2.js"></script>
-
-  </table>
+  </table> -->
+  <script src="./3-function-massivs.js"></script>
 
 </body>
 

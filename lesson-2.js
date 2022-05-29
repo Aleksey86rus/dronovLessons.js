@@ -24,9 +24,8 @@
 // else
 //   cents = ins * 2.54;
 
-// window.document.write(`<h1> Вычисленная величина: = ${cents} (см) </h1>`);
+// window.document.write(`<h1> Вычисленная величина:  = ${cents} (см) </h1>`);
 // // console.log(cents);
-
 
 // === Выражение выбора === //
 
@@ -65,4 +64,74 @@
 // }
 
 
-console.log("1" == "gfg");
+let a;
+for (a = 10; a <= 200; a += 10) {
+  document.write('<tr><td>', a, '</td>');
+  document.write('<td>', Math.sqrt(a), '</td></tr>');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=== Значения операндов СТРОГО РАВНЫ ===//
+// console.log('1' === '1'); // true
+// console.log('a' === 'a'); // true
+// console.log(1 === 1); // true
+// console.log('' === ''); // true
+// console.log(undefined === undefined); // true
+
+//=== Значения операндов СТРОГО РАВНЫ ===//
+// console.log('1' === 1); // false
+// console.log('a' === 1); // false
+// console.log('a' === '1'); // false
+// console.log('' === '1'); // false
+// console.log(' ' === '1'); // false
+// console.log('' === ' '); // false
+// console.log(NaN === NaN); // false
+// console.log(undefined === NaN); // false
+
+
+//-------------------------------------------------//
+
+
+//=== Значения операндов СТРОГО НЕ РАВНЫ ===//
+// console.log('1' !== '1'); // false
+// console.log('a' !== 'a'); // false
+// console.log(1 !== 1); // false
+// console.log('' !== ''); // false
+// console.log(undefined !== undefined); // false
+
+// //=== Значения операндов СТРОГО НЕ РАВНЫ ===//
+// console.log('1' !== 1); // true
+// console.log('a' !== 1); // true
+// console.log('a' !== '1'); // true
+// console.log('' !== '1'); // true
+// console.log(' ' !== '1'); // true
+// console.log('' !== ' '); // true
+// console.log(10 !== 20); // true
+// console.log("10" !== "20"); // true
+// console.log(NaN !== NaN); // true
+// console.log(undefined !== NaN); // true
+
+
+//------------------------------------------------//
+// let a = 'ccd';
+// let b = '1'
+// console.log(typeof (a));
+// console.log(typeof (b));
+
+// console.log(a);
+// console.log(b);
