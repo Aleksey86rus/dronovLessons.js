@@ -64,11 +64,11 @@
 // }
 
 
-let a;
-for (a = 10; a <= 200; a += 10) {
-  document.write('<tr><td>', a, '</td>');
-  document.write('<td>', Math.sqrt(a), '</td></tr>');
-}
+// let a;
+// for (a = 10; a <= 200; a += 10) {
+//   document.write('<tr><td>', a, '</td>');
+//   document.write('<td>', Math.sqrt(a), '</td></tr>');
+// }
 
 
 
